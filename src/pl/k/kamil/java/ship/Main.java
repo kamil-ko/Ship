@@ -7,7 +7,7 @@ public class Main {
         int size = Communication.getSizeFromScanner();
         GameBoard gameBoard = new GameBoard(size);
         Position ship = new Position(size / 2, size / 2);
-        Position treasure = GameBoard.getTreasure(size / 2, size);
+        Position treasure = GameBoard.getTreasure(ship.getHorizontal(), size);
         Movment movment = new Movment();
 
         while (true) {
