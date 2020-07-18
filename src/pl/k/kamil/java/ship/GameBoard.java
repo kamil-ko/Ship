@@ -37,7 +37,7 @@ public class GameBoard {
 
     }
     public static boolean shipOutside(Position ship,int size){
-        return ship.getHorizontal() < 0 || ship.getVertical() > size-1 || ship.getHorizontal() > size-1 || ship.getHorizontal() < 0;
+        return ship.getHorizontal() < 0 || ship.getVertical() > size-1 || ship.getHorizontal() > size-1 || ship.getVertical() < 0;
     }
 
     public boolean shipInSamePlace(){
