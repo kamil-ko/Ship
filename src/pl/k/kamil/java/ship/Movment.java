@@ -2,10 +2,10 @@ package pl.k.kamil.java.ship;
 
 public class Movment {
 
-    private Communication communication = new Communication();
+    private final Communication communication = new Communication();
 
     public void moveShip(Position ship) {
-        switch (communication.getDirectionFromScanner()) {
+        switch (Communication.getDirectionFromScanner()) {
             case "góra":
             case "g":
                 ship.subtractionHorizontal();
